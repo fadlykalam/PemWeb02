@@ -30,5 +30,8 @@ Route::get('/', function () {
 
 Route::get('/mobil', [MobilController::class, 'index']);
 Route::get('/mobil/create', [MobilController::class, 'create']); //Memanggil Form
-Route::post('/mobil/simpanData', [MobilController::class, 'store']); //Mengirim Request
+Route::post('/mobil/simpan-data', [MobilController::class, 'store']); //Mengirim Request
+
 Route::get('/merk', [MerkController::class, 'index']);
+Route::get('/merk/create', [MerkController::class, 'create']);
+Route::post('/merk/simpan-data', [MerkController::class, 'store']);
